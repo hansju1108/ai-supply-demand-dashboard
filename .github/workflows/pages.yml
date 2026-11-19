@@ -30,7 +30,9 @@ jobs:
         run: python3 scripts/validate_data.py
       - name: Build website
         run: python3 scripts/build_site.py
-      - name: Validate dashboard JavaScript\n        run: python3 scripts/check_site_js.py\n      - uses: actions/configure-pages@v5
+      - name: Validate dashboard JavaScript
+        run: python3 scripts/check_site_js.py
+      - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
