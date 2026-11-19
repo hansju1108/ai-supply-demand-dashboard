@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-11-19",
-  "version": "V2",
-  "sourceWorkbook": "AI_供需缺口_每週追蹤儀表板_20261119_v2.xlsx",
+  "asOf": "2026-11-20",
+  "version": "V3",
+  "sourceWorkbook": "AI_供需缺口_四層模型_V3_20261120.xlsx",
   "sheets": {
     "00_總覽": [
       [
-        "AI 供需缺口追蹤｜研究儀表板",
+        "AI 供需缺口｜四層：使用→變現→租金/融資→算力交付",
         null,
         null,
         null,
@@ -426,6 +426,42 @@
       ],
       [
         "更新時間：2026-11-19｜新增 09–13 工作表；原有財報數據未在本次重算。",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "V3 修正：SKY2028營收347B／門檻441B＝78.7%營收充足比；非實際租金覆蓋",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Anthropic Q2→Q3算力成本增加4.305B／營收增量5.401B≈79.7%，含訓練與內部使用",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "新增14–18分頁，租金/擔保未經官方核實部分均為C級假設",
         null,
         null,
         null,
@@ -1866,6 +1902,66 @@
         "B",
         "新用戶6月後訊息日量+50%；不代表全球增幅",
         "https://openai.com/index/how-chatgpt-adoption-has-expanded/"
+      ],
+      [
+        "S32",
+        "Anthropic",
+        "2026 SEC最終IPO招股書",
+        "2026-11-18",
+        "2026 Q2–Q3",
+        "A",
+        "季度收入、算力成本、承諾/IPO前流動性",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      [
+        "S33",
+        "Anthropic",
+        "官方IPO Factsheet",
+        "2026-11",
+        "2026-10",
+        "B",
+        "10月底ARR約81B，不等於已認列營收",
+        "https://ipo.anthropic.com/documents/us/factsheet.pdf"
+      ],
+      [
+        "S34",
+        "CoreWeave",
+        "2026Q3 10-Q",
+        "2026-11",
+        "2026 Q3",
+        "A",
+        "RPO和最大客戶營收集中度",
+        "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm"
+      ],
+      [
+        "S35",
+        "財報狗SKY/鏈新聞",
+        "Show Me the ARR 第三方情境",
+        "2026-11-19",
+        "2028E",
+        "C",
+        "347/441B與CapEx 5-15%下修屬模型",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "S36",
+        "NVIDIA",
+        "官方NDR投資成本簡報",
+        "2025-10",
+        "長期",
+        "B",
+        "50–60B/GW及股權意向≤100B，不是已發生擔保",
+        "https://s201.q4cdn.com/141608511/files/doc_presentations/2025/10/NVIDIA-2025-NDR-Deck-1.pdf"
+      ],
+      [
+        "S37",
+        "US BIS",
+        "Federal Register官方規則",
+        "2026-11-19",
+        "2026-11-19生效",
+        "A",
+        "出口管制確定、損失35–40B估計尚未驗證",
+        "https://www.govinfo.gov/content/pkg/FR-2026-11-19/pdf/2026-23529.pdf"
       ]
     ],
     "07_週次歷史": [
@@ -1973,6 +2069,21 @@
         16.7,
         4.313,
         "推論需求與建案追蹤；Epoch 2028正確合計20.7GW；不可視為按期投運"
+      ],
+      [
+        "2026-11-20",
+        "2026-11-19",
+        "V3｜四層營收/租金/融資",
+        "原始指標保留，增加C級SKY情境",
+        201.968,
+        13.8,
+        900.9,
+        677,
+        561,
+        107.6,
+        16.7,
+        4.313,
+        "需求→變現→租金→硬體四層；新增14–18"
       ]
     ],
     "08_方法與說明": [
@@ -2561,7 +2672,12 @@
         "證據等級",
         "邏輯檢查/不可推論",
         "官方來源URL",
-        "模型/第三方URL"
+        "模型/第三方URL",
+        "用途/承租分類",
+        "取消條款",
+        "融資依賴",
+        "信用風險",
+        "查核日期"
       ],
       [
         "Microsoft",
@@ -2576,7 +2692,12 @@
         "C：MW估計；B：公司施工",
         "公司稱第二座2028完工，不保證該年全部2.263GW上線",
         "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/",
-        "https://epoch.ai/data/ai-data-centers/directory/microsoft-fairwater-wisconsin"
+        "https://epoch.ai/data/ai-data-centers/directory/microsoft-fairwater-wisconsin",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜租約/供電待核",
+        "2026-11-19"
       ],
       [
         "Amazon",
@@ -2591,7 +2712,12 @@
         "C：MW估計",
         "不能把與Anthropic客戶需求重複加到AWS自用需求",
         null,
-        "https://intelligenceprogress.com/data-centers/companies/amazon"
+        "https://intelligenceprogress.com/data-centers/companies/amazon",
+        "外租客戶（待合同核實）",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜租約/供電待核",
+        "2026-11-19"
       ],
       [
         "Amazon",
@@ -2606,7 +2732,12 @@
         "C：MW估計",
         "預測終值；不是2028必達承諾",
         null,
-        "https://intelligenceprogress.com/data-centers/companies/amazon"
+        "https://intelligenceprogress.com/data-centers/companies/amazon",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜租約/供電待核",
+        "2026-11-19"
       ],
       [
         "Amazon",
@@ -2621,7 +2752,12 @@
         "C：MW估計",
         "預估2027先增量、2028後擴建",
         null,
-        "https://intelligenceprogress.com/data-centers/companies/amazon"
+        "https://intelligenceprogress.com/data-centers/companies/amazon",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜租約/供電待核",
+        "2026-11-19"
       ],
       [
         "Amazon",
@@ -2636,7 +2772,12 @@
         "C：MW估計",
         "2027預測終值",
         null,
-        "https://intelligenceprogress.com/data-centers/companies/amazon"
+        "https://intelligenceprogress.com/data-centers/companies/amazon",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜租約/供電待核",
+        "2026-11-19"
       ],
       [
         "Google",
@@ -2651,7 +2792,12 @@
         "C：MW與歸屬推測",
         "不得作為Google確認建案；會大幅扭曲2027增量",
         null,
-        "https://epoch.ai/data/ai-data-centers/directory/goodnight"
+        "https://epoch.ai/data/ai-data-centers/directory/goodnight",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "紅｜歸屬推測",
+        "2026-11-19"
       ],
       [
         "Google",
@@ -2666,7 +2812,12 @@
         "C：MW估計",
         "模型預計2026末先上線173MW，2028擴至863MW；未證實各期實投",
         null,
-        "https://intelligenceprogress.com/data-centers/companies/google"
+        "https://intelligenceprogress.com/data-centers/companies/google",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜租約/供電待核",
+        "2026-11-19"
       ],
       [
         "Google",
@@ -2681,7 +2832,12 @@
         "C：MW估計",
         "第三方模型完成時間",
         null,
-        "https://intelligenceprogress.com/data-centers/companies/google"
+        "https://intelligenceprogress.com/data-centers/companies/google",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜租約/供電待核",
+        "2026-11-19"
       ],
       [
         "Meta",
@@ -2696,7 +2852,12 @@
         "C：MW估計",
         "已運作471MW第三方估計；目標1022MW",
         null,
-        "https://intelligenceprogress.com/data-centers/companies/meta"
+        "https://intelligenceprogress.com/data-centers/companies/meta",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜租約/供電待核",
+        "2026-11-19"
       ],
       [
         "Meta",
@@ -2711,7 +2872,12 @@
         "A：租約；C：MW與2028時程",
         "SEC披露Louisiana Venture租約2029起；不可把2028全部算作已確定上線",
         "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
-        "https://intelligenceprogress.com/data-centers/companies/meta"
+        "https://intelligenceprogress.com/data-centers/companies/meta",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "紅｜2028/2029期間錯配",
+        "2026-11-19"
       ],
       [
         "Meta",
@@ -2726,7 +2892,12 @@
         "C：MW與歸屬推測",
         "不能視為Meta確認採購/用電",
         null,
-        "https://intelligenceprogress.com/data-centers/companies/meta"
+        "https://intelligenceprogress.com/data-centers/companies/meta",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "紅｜歸屬推測",
+        "2026-11-19"
       ],
       [
         "Meta",
@@ -2741,7 +2912,12 @@
         "B：官方規劃",
         "1GW為完整園區目標，官方僅稱2028開始上線；不可全計入2028年新增",
         "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
-        null
+        null,
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜租約/供電待核",
+        "2026-11-19"
       ],
       [
         "Meta",
@@ -2756,7 +2932,12 @@
         "C：MW估計",
         "第三方模型並非官方確定上線",
         null,
-        "https://intelligenceprogress.com/data-centers/companies/meta"
+        "https://intelligenceprogress.com/data-centers/companies/meta",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜租約/供電待核",
+        "2026-11-19"
       ],
       [
         null,
@@ -3042,6 +3223,1016 @@
         "無機型TDP、系統密度、PUE、上線時間，GPU數≠MW",
         "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai"
       ]
+    ],
+    "14_變現與租金覆蓋": [
+      [
+        "需求變現與租金覆蓋｜原始資料",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "收入、ARR、RPO、支出承諾不同口徑；C級SKY只用來做敏感度測試。",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "ID",
+        "公司",
+        "指標",
+        "數值",
+        "單位",
+        "資料時點",
+        "證據等級",
+        "限制",
+        "狀態",
+        "來源URL"
+      ],
+      [
+        "M01",
+        "Anthropic",
+        "2026-10 年化營收速率",
+        81,
+        "US$B/year",
+        "2026-10-31",
+        "B 官方路演",
+        "單月年化；不等於年度已認列收入",
+        "已揭露",
+        "https://ipo.anthropic.com/documents/us/factsheet.pdf"
+      ],
+      [
+        "M02",
+        "Anthropic",
+        "2026 Q3 已認列營收",
+        16.956,
+        "US$B/quarter",
+        "2026-09-30",
+        "A SEC",
+        "與Q2相同會計口徑",
+        "已揭露",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      [
+        "M03",
+        "Anthropic",
+        "2026 Q2 已認列營收",
+        11.555,
+        "US$B/quarter",
+        "2026-06-30",
+        "A SEC",
+        "供增量成本交叉驗證",
+        "已揭露",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      [
+        "M04",
+        "Anthropic",
+        "2026 Q3 算力基礎設施費",
+        9.863,
+        "US$B/quarter",
+        "2026-09-30",
+        "A SEC",
+        "包含模型訓練、推論和內部研究，不是純推論成本",
+        "已揭露",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      [
+        "M05",
+        "Anthropic",
+        "2026 Q2 算力基礎設施費",
+        5.558,
+        "US$B/quarter",
+        "2026-06-30",
+        "A SEC",
+        "同口徑；不是新租約付款",
+        "已揭露",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      [
+        "M06",
+        "Anthropic",
+        "跨多年算力基建承諾",
+        900.9,
+        "US$B total",
+        "2026-09-30及之後",
+        "A SEC",
+        "跨年採購/租約義務；不得當成單年租金",
+        "已揭露",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      [
+        "M07",
+        "Anthropic",
+        "12個月到期基建承諾",
+        70.7,
+        "US$B/12mo",
+        "2026-09-30",
+        "A SEC",
+        "已包含在900.9B，不可再相加",
+        "已揭露",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      [
+        "M08",
+        "Anthropic",
+        "IPO前流動性",
+        146.6,
+        "US$B",
+        "2026-09-30",
+        "A SEC",
+        "IPO前資金歷史數字，不代表目前現金",
+        "歷史值",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      [
+        "M09",
+        "OpenAI＋Anthropic",
+        "SKY 2028所需營收",
+        441,
+        "US$B/year",
+        "2028E",
+        "C 第三方假設",
+        "非已簽約租金；模型門檻",
+        "情境",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "M10",
+        "OpenAI＋Anthropic",
+        "SKY 2028預測營收",
+        347,
+        "US$B/year",
+        "2028E",
+        "C 第三方假設",
+        "非公司營收財測",
+        "情境",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "M11",
+        "全部AI CapEx",
+        "SKY 2028低於共識中點",
+        10,
+        "%",
+        "2028E",
+        "C 第三方假設",
+        "5–15%區間的中點，非已發生下修",
+        "情境",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "M12",
+        "1GW Rubin基建",
+        "每GW建設成本假設",
+        60,
+        "US$B/GW",
+        "長期規劃",
+        "B/C 情境",
+        "NVIDIA原簡報50–60B/GW；取高端60B做試算",
+        "情境",
+        "https://s201.q4cdn.com/141608511/files/doc_presentations/2025/10/NVIDIA-2025-NDR-Deck-1.pdf"
+      ]
+    ],
+    "15_2028情境模型": [
+      [
+        "2028資本支出與租金情境試算",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "紅線：Revenue adequacy proxy ≠ 現金租金覆蓋率；未披露租金付款則後者留白。",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "參數/結果",
+        "數值",
+        "單位",
+        "信心/來源",
+        "定義限制",
+        "來源URL"
+      ],
+      [
+        "2028 所需營收（SKY）",
+        441,
+        "US$B/year",
+        "C SKY",
+        "第三方模型門檻，不是實際租金",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "2028 預測營收（SKY）",
+        347,
+        "US$B/year",
+        "C SKY",
+        "不是 OpenAI／Anthropic 正式財測",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "2028 全市場 CapEx 共識（SKY）",
+        1800,
+        "US$B/year",
+        "C SKY",
+        "未取得可逐公司重建的共識樣本",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "2028 CapEx 下修情境",
+        0.1,
+        "fraction",
+        "C 模型",
+        "5–15%中點，可調",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "2028 外租算力 CapEx（SKY）",
+        857,
+        "US$B/year",
+        "C SKY",
+        "CapEx不是當年租金",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "兩公司占外租比率（SKY）",
+        0.7,
+        "fraction",
+        "C SKY",
+        "需要租約與客戶逐案核對",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "每GW資本支出",
+        60,
+        "US$B/GW",
+        "B/C 模型",
+        "NVIDIA50–60B/GW；取上緣",
+        "https://s201.q4cdn.com/141608511/files/doc_presentations/2025/10/NVIDIA-2025-NDR-Deck-1.pdf"
+      ],
+      [
+        "IT資本成本比例",
+        0.8333333333333334,
+        "fraction",
+        "C 模型",
+        "50B設備/10B建物模型假設",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "IT經濟壽命",
+        5,
+        "year",
+        "C 模型",
+        "可用7年情境驗證",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "建物年限",
+        14,
+        "year",
+        "C 模型",
+        "示意年限",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "資金折現率",
+        0.09,
+        "fraction",
+        "C 模型",
+        "不等於所有業者融資成本",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "每GW年營運/能源費",
+        2,
+        "US$B/year",
+        "C 模型",
+        "自訂敏感度，不是報告公司數值",
+        ""
+      ],
+      [
+        "可支付租金現金利潤率",
+        0.2,
+        "fraction",
+        "C 模型",
+        "僅概念輸入，無實際合約現金流",
+        ""
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "模型結果（固定快照；網站另有即時計算）",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "營收充足比＝347÷441",
+        0.7868480725623582,
+        "fraction",
+        "C 計算",
+        "不是實際現金租金覆蓋率",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "營收缺口＝441-347",
+        94,
+        "US$B/year",
+        "C 計算",
+        "對比第三方門檻",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "情境下修後CapEx",
+        1620,
+        "US$B/year",
+        "C 計算",
+        "1800×(1-10%)，非新共識",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "兩家相關外租CapEx",
+        599.9,
+        "US$B/year",
+        "C 計算",
+        "857×70%，不是一年租金",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "1GW年化資本回收+維運：5年設備",
+        16.1389545780228,
+        "US$B/GW/year",
+        "C 模型",
+        "9% WACC、50B IT/10B建物、2B運維",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "1GW年化資本回收+維運：7年設備",
+        13.218857571865204,
+        "US$B/GW/year",
+        "C 模型",
+        "僅改IT設備年限，其餘不變",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "實際現金租金覆蓋率",
+        null,
+        "未揭露",
+        "缺資料",
+        "缺已確認租金付款及可用現金流，不可計算",
+        ""
+      ],
+      [
+        "2028營收三情境（保守300/470、基準347/441、改善441/420；全屬假設）",
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    ],
+    "16_融資與信用鏈": [
+      [
+        "資金、客戶及供應商信用鏈",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "明確區分已發生債務、RPO、承諾、意向股權和第三方猜測的擔保。",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "ID",
+        "交易方",
+        "類型",
+        "數值",
+        "日期",
+        "來源",
+        "狀態",
+        "風險限制",
+        "來源URL"
+      ],
+      [
+        "F01",
+        "Anthropic",
+        "跨多年基建支出承諾",
+        900.9,
+        "2026-09-30及後續",
+        "A SEC",
+        "已披露",
+        "跨多年不能與RPO/供應商backlog加總",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      [
+        "F02",
+        "Anthropic",
+        "未來12月到期承諾",
+        70.7,
+        "2026-09-30",
+        "A SEC",
+        "已披露",
+        "已內含於900.9B",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      [
+        "F03",
+        "Anthropic",
+        "IPO前流動性",
+        146.6,
+        "2026-09-30",
+        "A SEC",
+        "歷史值",
+        "IPO後資金額不同，不可宣稱2026-11仍為146.6B",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      [
+        "F04",
+        "CoreWeave",
+        "客戶RPO",
+        132.3,
+        "2026 Q3",
+        "A SEC",
+        "已披露",
+        "RPO不等於已收到現金",
+        "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm"
+      ],
+      [
+        "F05",
+        "CoreWeave",
+        "最大客戶季營收比",
+        30,
+        "2026 Q3",
+        "A SEC",
+        "已披露",
+        "不應全部視為OpenAI",
+        "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm"
+      ],
+      [
+        "F06",
+        "CoreWeave",
+        "第二大客戶季營收比",
+        24,
+        "2026 Q3",
+        "A SEC",
+        "已披露",
+        "客戶集中度風險",
+        "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm"
+      ],
+      [
+        "F07",
+        "NVIDIA / OpenAI",
+        "最高股權投資意向",
+        100,
+        "2025 IR",
+        "B 公司簡報",
+        "意向",
+        "非已付擔保；與下列數字法律性質不同",
+        "https://s201.q4cdn.com/141608511/files/doc_presentations/2025/10/NVIDIA-2025-NDR-Deck-1.pdf"
+      ],
+      [
+        "F08",
+        "NVIDIA / OpenAI",
+        "Ohio租約擔保（SKY聲稱）",
+        10.5,
+        "2026E",
+        "C SKY",
+        "尚未找到原合約",
+        "不可視為已確認資產負債曝險",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "F09",
+        "NVIDIA",
+        "最大擔保曝險（SKY聲稱）",
+        108.5,
+        "2026E",
+        "C SKY",
+        "尚未找到原合約",
+        "不能與100B意向股權投資加總",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "F10",
+        "Broadcom / Anthropic",
+        "TPU殘值擔保",
+        null,
+        "2026E",
+        "C SKY",
+        "待核實",
+        "缺合約及法律上最大擔保金額",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "F11",
+        "OpenAI",
+        "2028模型資金缺口",
+        90,
+        "2028E",
+        "C SKY",
+        "情境",
+        "非已逾期借款",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "F12",
+        "Oracle",
+        "OpenAI RPO占比(SKY)",
+        45,
+        "2026E",
+        "C SKY",
+        "待核實",
+        "百分比不是RPO美元金額",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ]
+    ],
+    "17_專案租金風險標籤": [
+      [
+        "逐案融資與租金風險標籤",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "缺少逐案真實租約與信用條款時不可標為無條件不可取消、亦不得假設高槓桿。",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "CSP",
+        "園區",
+        "地區",
+        "承租/用途",
+        "取消條款",
+        "融資依賴",
+        "現有警示",
+        "歸屬",
+        "啟用預期",
+        "信用風險",
+        "來源URL"
+      ],
+      [
+        "Microsoft",
+        "Fairwater Wisconsin",
+        "威斯康辛 Mount Pleasant",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜時程/電力",
+        "公司持有/模型容量需拆分",
+        "2028 Q2",
+        "黃｜租約/供電待核",
+        "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/"
+      ],
+      [
+        "Amazon",
+        "Anthropic-Amazon New Carlisle",
+        "印第安納 New Carlisle",
+        "外租客戶（待合同核實）",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜剩餘擴建",
+        "公司持有/模型容量需拆分",
+        "2028/03",
+        "黃｜租約/供電待核",
+        "https://intelligenceprogress.com/data-centers/companies/amazon"
+      ],
+      [
+        "Amazon",
+        "Amazon Madison Mega Site",
+        "密西西比 Canton",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜延續交付",
+        "公司持有/模型容量需拆分",
+        "2028/03",
+        "黃｜租約/供電待核",
+        "https://intelligenceprogress.com/data-centers/companies/amazon"
+      ],
+      [
+        "Amazon",
+        "Amazon Ridgeland",
+        "密西西比 Ridgeland",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜供電/施工",
+        "公司持有/模型容量需拆分",
+        "2028/09",
+        "黃｜租約/供電待核",
+        "https://intelligenceprogress.com/data-centers/companies/amazon"
+      ],
+      [
+        "Amazon",
+        "AWS New Albany",
+        "俄亥俄 New Albany",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜交付",
+        "公司持有/模型容量需拆分",
+        "2027/07",
+        "黃｜租約/供電待核",
+        "https://intelligenceprogress.com/data-centers/companies/amazon"
+      ],
+      [
+        "Google",
+        "Goodnight",
+        "德州 Claude",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "紅｜歸屬不明",
+        "推測：不可視為確定",
+        "2027/10",
+        "紅｜歸屬推測",
+        "https://epoch.ai/data/ai-data-centers/directory/goodnight"
+      ],
+      [
+        "Google",
+        "Google Fort Wayne",
+        "印第安納 Fort Wayne",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜分期/電力",
+        "公司持有/模型容量需拆分",
+        "2028/06",
+        "黃｜租約/供電待核",
+        "https://intelligenceprogress.com/data-centers/companies/google"
+      ],
+      [
+        "Google",
+        "Google Cedar Rapids",
+        "愛荷華 Cedar Rapids",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜交付",
+        "公司持有/模型容量需拆分",
+        "2027/05",
+        "黃｜租約/供電待核",
+        "https://intelligenceprogress.com/data-centers/companies/google"
+      ],
+      [
+        "Meta",
+        "Prometheus",
+        "俄亥俄 New Albany",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜擴建",
+        "公司持有/模型容量需拆分",
+        "2028/07",
+        "黃｜租約/供電待核",
+        "https://intelligenceprogress.com/data-centers/companies/meta"
+      ],
+      [
+        "Meta",
+        "Hyperion",
+        "路易斯安那 Holly Ridge",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "紅｜模型2028/SEC租約2029",
+        "公司持有/模型容量需拆分",
+        "2028/01（模型）",
+        "紅｜2028/2029期間錯配",
+        "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+      ],
+      [
+        "Meta",
+        "QTS Cedar Rapids",
+        "愛荷華 Fairfax",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "紅｜歸屬不明",
+        "推測：不可視為確定",
+        "2027/11",
+        "紅｜歸屬推測",
+        "https://intelligenceprogress.com/data-centers/companies/meta"
+      ],
+      [
+        "Meta",
+        "El Paso",
+        "德州 El Paso",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜2028當年MW不明",
+        "公司持有/模型容量需拆分",
+        "2028開始分期",
+        "黃｜租約/供電待核",
+        "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/"
+      ],
+      [
+        "Meta",
+        "Bowling Green",
+        "俄亥俄 Bowling Green",
+        "自用/外租未拆分",
+        "未披露可比條款",
+        "未揭露，不能假定高槓桿",
+        "黃｜交付",
+        "公司持有/模型容量需拆分",
+        "2028/01",
+        "黃｜租約/供電待核",
+        "https://intelligenceprogress.com/data-centers/companies/meta"
+      ]
+    ],
+    "18_四層跨層驗證": [
+      [
+        "使用→變現→算力租金→供應鏈｜十項驗證",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "每項分開確認數學、會計口徑與因果推論；紅色可能是禁止混算，不代表需求急減。",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "ID",
+        "鏈路",
+        "訊號A",
+        "訊號B",
+        "類型",
+        "修正/限制",
+        "警示",
+        "來源URL"
+      ],
+      [
+        "X01",
+        "推論用量→收入",
+        "Google API token增長 vs paid revenue",
+        "不同母體不能直接算單位用戶token",
+        "證據不完整",
+        "需模型/價格/免費流量拆分",
+        "黃｜缺資料",
+        "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/"
+      ],
+      [
+        "X02",
+        "收入→算力成本",
+        "Anthropic Q3/Q2收入與compute成本",
+        "4.305÷5.401≈79.7%",
+        "算術已確認",
+        "費用含訓練和內部研究，非純推論邊際租金",
+        "黃｜因果未拆",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      [
+        "X03",
+        "2028收入→財務門檻",
+        "SKY 347 vs441",
+        "營收充足比78.7%、缺94B",
+        "C 級情境",
+        "不能宣稱真實租金覆蓋78.7%",
+        "黃｜假設敏感",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "X04",
+        "承諾→流動性",
+        "Anthropic900.9B vs IPO前146.6B",
+        "跨多年vs歷史時點",
+        "不同會計期間",
+        "不能直接減法得資金缺口",
+        "黃｜現金流待估",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      [
+        "X05",
+        "每GW成本→租金",
+        "60B/GW;5/14年;9%;2B運維",
+        "年化回收≈16.1B；7年≈13.2B",
+        "模型差異",
+        "14B租金非無條件定論",
+        "黃｜成本敏感",
+        "https://s201.q4cdn.com/141608511/files/doc_presentations/2025/10/NVIDIA-2025-NDR-Deck-1.pdf"
+      ],
+      [
+        "X06",
+        "融資支撐→信用風險",
+        "100B NVIDIA股權意向vs擔保108.5B說法",
+        "不同契約法律性質",
+        "缺原始條款",
+        "不能混加或當確定擔保曝險",
+        "黃｜待核實",
+        "https://s201.q4cdn.com/141608511/files/doc_presentations/2025/10/NVIDIA-2025-NDR-Deck-1.pdf"
+      ],
+      [
+        "X07",
+        "外租CapEx→租金",
+        "857B×70%=599.9B",
+        "資本投資≠一年租金",
+        "口徑錯配",
+        "需要年度真實rent schedule",
+        "紅｜禁止混算",
+        "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "X08",
+        "2027訂單→2028投運",
+        "各案模型日期vs變壓器/電網",
+        "延期不等於取消",
+        "部分已確認延期",
+        "追原訂/修訂/實投運",
+        "黃｜待驗證",
+        "https://epoch.ai/data/ai-data-centers"
+      ],
+      [
+        "X09",
+        "BIS限制→海外訂單",
+        "官方限制五個目的地/用途",
+        "SKY 35–40B損失估計",
+        "事實+第三方情境",
+        "法規確定不代表金額可確證",
+        "黃｜影響未量化",
+        "https://www.govinfo.gov/content/pkg/FR-2026-11-19/pdf/2026-23529.pdf"
+      ],
+      [
+        "X10",
+        "多方同一算力合約",
+        "Anthropic成本承諾 vs CSP RPO",
+        "付款/收款兩面",
+        "禁止雙重計數",
+        "建唯一合同ID與明細來源",
+        "黃｜重複計數",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ]
     ]
-  }
+  },
+  "researchDataThrough": "2026-11-19"
 }
