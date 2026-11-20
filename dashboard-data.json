@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-20",
-  "version": "V3",
-  "sourceWorkbook": "AI_供需缺口_四層模型_V3_20261120.xlsx",
+  "version": "V4-review",
+  "sourceWorkbook": "AI_供需缺口_四層模型_V4_20261120.xlsx",
   "sheets": {
     "00_總覽": [
       [
@@ -471,6 +471,9 @@
         null,
         null,
         null
+      ],
+      [
+        "2026-11-20 V4｜本週增量：NVIDIA FY27 Q4總營收指引130B；Google Q3 CapEx51.4B、Cloud30.7B；MSFT Azure33.165B；均已註明來源與會計口徑"
       ]
     ],
     "01_CSP資本支出": [
@@ -671,6 +674,17 @@
         null,
         null,
         null
+      ],
+      [
+        "Alphabet Q3現金CapEx已核對",
+        null,
+        null,
+        null,
+        51.4,
+        "A",
+        "2026-10-29",
+        "公司法說披露；65%技術基建用於伺服器/網路；35%資料中心，僅Q3，非四季各自拆分",
+        "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/"
       ]
     ],
     "02_終端AI": [
@@ -904,6 +918,39 @@
         "B",
         "區間135–145；不可加到現金PP&E",
         "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
+      ],
+      [
+        "CSP",
+        "Microsoft",
+        "Azure 2026 Q3單季營收（FY27 Q1）",
+        33.165,
+        "US$B",
+        "2026-09-30；發布2026-10-28",
+        "A",
+        "同比比較基期22.384B；公司FY27調整分類，歷史可比須用recast數值",
+        "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
+      ],
+      [
+        "CSP",
+        "Alphabet",
+        "Google Cloud 2026 Q3營收",
+        30.7,
+        "US$B",
+        "2026-09-30；發布2026-10-28",
+        "B",
+        "同比+103%；含TPU系統銷售，不能視為純雲租金或純AI收入",
+        "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/"
+      ],
+      [
+        "CSP",
+        "Amazon",
+        "AWS 2026 Q3營收年增率",
+        39.3,
+        "%",
+        "2026-09-30；發布2026-10-29",
+        "A",
+        "AWS 46.0B；不是模型業者收入",
+        "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/"
       ]
     ],
     "03_硬體供應": [
@@ -1170,6 +1217,28 @@
         "缺漏",
         "與資料中心MW進度比對",
         null
+      ],
+      [
+        "GPU",
+        "NVIDIA",
+        "2026-11-17最新 FY2027 Q4 營收指引中點",
+        130,
+        "US$B",
+        "截至2026-10-25，指引2027FY Q4",
+        "A",
+        "含額外一週；公司總營收指引，非DC單獨指引；中國DC compute假設為零",
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+      ],
+      [
+        "GPU",
+        "NVIDIA",
+        "2026-11-17 FY2027 Q3 公司總營收",
+        115.8,
+        "US$B",
+        "截至2026-10-25；公告2026-11-17",
+        "A",
+        "QoQ+20%、YoY+103%；與DC營收107.6B不可加總",
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
       ]
     ],
     "04_交叉驗證": [
@@ -1962,6 +2031,56 @@
         "A",
         "出口管制確定、損失35–40B估計尚未驗證",
         "https://www.govinfo.gov/content/pkg/FR-2026-11-19/pdf/2026-23529.pdf"
+      ],
+      [
+        "S38",
+        "NVIDIA",
+        "FY27 Q3正式業績及FY27 Q4展望",
+        "2026-11-17",
+        "截至2026-10-25",
+        "A",
+        "DC 107.6B；總營收115.8B；Q4總營收指引130B",
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+      ],
+      [
+        "S39",
+        "Alphabet",
+        "2026 Q3法說及支出承諾",
+        "2026-10-28",
+        "2026 Q3",
+        "B",
+        "Cloud30.7B、CapEx51.4B、924B未來採購承諾、152B租約及其他義務",
+        "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/"
+      ],
+      [
+        "S40",
+        "Microsoft",
+        "FY27 Q1財報分類重編後Azure數據",
+        "2026-10-28",
+        "2026 Q3",
+        "A",
+        "Azure33.165B，2025Q3基期22.384B，重編前後不能混接",
+        "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
+      ],
+      [
+        "S41",
+        "Amazon",
+        "2026 Q3正式財報",
+        "2026-10-29",
+        "2026 Q3",
+        "A",
+        "AWS46.0B同比39.3%，FCF TTM -42.4B",
+        "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/"
+      ],
+      [
+        "S42",
+        "Anthropic",
+        "2026 IPO EEA prospectus承諾到期區間",
+        "2026-11",
+        "2026-09-30及後",
+        "A",
+        "900.9B跨多年承諾、70.7B未來12月；不等於單年租金",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026073040/anthropicpbc-fwpxeeaprospea.htm"
       ]
     ],
     "07_週次歷史": [
@@ -2084,6 +2203,21 @@
         16.7,
         4.313,
         "需求→變現→租金→硬體四層；新增14–18"
+      ],
+      [
+        "2026-11-20",
+        "2026-11-20",
+        "V4｜週報來源複核",
+        "新增來源S38-S42及跨層X11-X13；保留V3",
+        201.968,
+        13.8,
+        900.9,
+        677,
+        561,
+        107.6,
+        16.7,
+        4.313,
+        "查核最新已發布公司IR，新增MSFT Azure重編口徑、GOOG現金流與承諾、NVDA指引；無證據證明連續兩季需求放緩"
       ]
     ],
     "08_方法與說明": [
@@ -3843,6 +3977,28 @@
         "待核實",
         "百分比不是RPO美元金額",
         "https://abmedia.io/ai-capex-openai-anthropic-arr-gap-2028"
+      ],
+      [
+        "F13",
+        "Alphabet",
+        "未來採購承諾（上限）",
+        924,
+        "2026-09-30",
+        "B 公司法說",
+        "已披露",
+        "多年期、包含可變價格與數量彈性；不可視為全額必然現金支出",
+        "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/"
+      ],
+      [
+        "F14",
+        "Alphabet",
+        "尚未開始租賃及其他義務",
+        152,
+        "2026-09-30",
+        "B 公司法說",
+        "已披露",
+        "與採購承諾分開；可能跨年，不能與季度capex直接相加",
+        "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/"
       ]
     ],
     "17_專案租金風險標籤": [
@@ -4231,8 +4387,38 @@
         "建唯一合同ID與明細來源",
         "黃｜重複計數",
         "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      [
+        "X11",
+        "Alphabet Cloud成長→現金流",
+        "2026Q3 Cloud營收30.7B，同比+103%",
+        "2026Q3 CapEx51.4B；FCF -9.1B",
+        "可合理解釋落差",
+        "CapEx為全集團、Cloud是分部，含TPU系統銷售；不能直接用比值算AI投資回收",
+        "黃｜資本密集；非兩季衰退證據",
+        "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/"
+      ],
+      [
+        "X12",
+        "NVIDIA出貨→實際運行",
+        "FY27Q3 DC營收107.6B，QoQ+21%",
+        "Vera Rubin NVL72開始出貨；部分客戶已部署",
+        "資料不足",
+        "已出貨/機架運作不等於每座園區已獲電網通電及持續利用率；需要各案MW",
+        "黃｜利用率未揭露",
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+      ],
+      [
+        "X13",
+        "Anthropic承諾→租金覆蓋",
+        "2026/09後約900.9B跨多年承諾",
+        "12月內約70.7B；其中部分2031-2045支出",
+        "可合理解釋落差",
+        "跨年承諾不是2028單年租金；不能直接扣IPO前現金146.6B",
+        "黃｜現金流時程未揭露",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026073040/anthropicpbc-fwpxeeaprospea.htm"
       ]
     ]
   },
-  "researchDataThrough": "2026-11-19"
+  "researchDataThrough": "2026-11-20"
 }
